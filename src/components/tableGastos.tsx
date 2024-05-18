@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Gastos } from '../types';
+import { Gastos } from '../types/Gastos';
 import { useState } from 'react';
 import Modal from './modal';
 
