@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import Table from '../components/tableGastos';
-import { Gastos } from '../types';
+import { Gastos } from '../types/Gastos';
 
 export default function Home() {
   const [gastos, setGastos] = useState<Gastos[]>([]);

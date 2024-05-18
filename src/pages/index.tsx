@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Usuario } from '../types';
+import { Usuario } from '../types/Usuario';
 
 export default function Home() {
   const [data, setData] = useState<Usuario[]>([]);
