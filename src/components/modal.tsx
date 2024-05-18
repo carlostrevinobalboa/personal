@@ -1,6 +1,6 @@
 import ReactModal from 'react-modal';
 
-const Modal = ({ isOpen, onClose, children }) => {
+const Modal = ({ isOpen, onClose, children }: { isOpen: boolean, onClose: () => void, children: React.ReactNode }) => {
     return (
         <ReactModal
             isOpen={isOpen}
