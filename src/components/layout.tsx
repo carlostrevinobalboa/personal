@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-const Layout = ({ children }) => {
+const Layout = ({ children }:any) => {
   return (
     <div>
       <header>
