@@ -3,9 +3,9 @@ import Link from 'next/link';
 const Layout = ({ children }:any) => {
   return (
     <div>
-      <header>
-        <nav>
-          <ul>
+      <header className='mt-3 flex align-middle justify-center '>
+        <nav className="border border-black w-1/2 shadow-sm shadow-gray-600 rounded">
+          <ul className='flex align-middle justify-evenly'>
             <li>
               <Link href="/">Home</Link>
             </li>

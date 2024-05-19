@@ -20,18 +20,18 @@ const Table = ({ data }: propGastos) => {
     };
 
     return (
-        <div>
-            <div className='relative float-right right-16 top-2 z-10 bg-red-600'>
-                <button onClick={openModal}>Añadir</button>
-                <Modal isOpen={isOpen} onClose={closeModal}>
-                    <h2>Modal Content</h2>
-                    <p>This is the content of the modal.</p>
-                    <button onClick={closeModal}>Close Modal</button>
-                </Modal>
-            </div>
-            <div className="w-100 overflow-x-auto shadow-md sm:rounded-lg">
-                <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                    <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+        <div className='w-3/4'>
+            <div className="w-full">
+                <div className='relative float-right right-14 top-8 z-10 bg-red-600'>
+                    <button onClick={openModal}>Añadir</button>
+                    <Modal isOpen={isOpen} onClose={closeModal}>
+                        <h2>Modal Content</h2>
+                        <p>This is the content of the modal.</p>
+                        <button onClick={closeModal}>Close Modal</button>
+                    </Modal>
+                </div>
+                <table className="w-full text-left text-gray-500 rounded overflow-hidden">
+                    <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 rounded-t">
                         <tr>
                             <th scope="col" className="px-6 py-3">
                                 Descripción
@@ -47,7 +47,7 @@ const Table = ({ data }: propGastos) => {
                             </th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody className="rounded-b">
                         {data.map((item, index) => (
                             <tr key={index} className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                                 <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">

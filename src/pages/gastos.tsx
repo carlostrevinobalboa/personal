@@ -17,7 +17,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div>
+    <div className='flex align-middle justify-center'>
       <Table data={gastos} />
     </div>
   );
